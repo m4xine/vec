@@ -29,8 +29,7 @@ typedef Vec(double) VecDouble;
   (vec__grow((void **)&(v)->raw, &(v)->len, &(v)->cap, sizeof(*(v)->raw), n))
 
 #define vec_push(v, e) \
-  (vec__grow((void **)&(v)->raw, &(v)->len, &(v)->cap, sizeof(*(v)->raw), 1), \
-   (v)->raw[(v)->len ++] = (e))
+  (vec_grow(v, 1), (v)->raw[(v)->len++] = (e))
 
 #define vec_at(v, i) ((v)->raw[i])
 
