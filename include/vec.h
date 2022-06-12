@@ -45,7 +45,7 @@ vec__init(void   **raw,
           size_t   tysz)
 {
   if (0 == *cap) *cap = VEC_DEF_CAP;
-  if (NULL == raw) *raw = malloc(tysz * *cap);
+  if (NULL == *raw) *raw = malloc(tysz * *cap);
 }
 
 void
