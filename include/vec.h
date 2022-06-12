@@ -16,8 +16,8 @@
             cap;  \
   }      
 
-typedef Vec(void *) VecVoidP;
-typedef Vec(char *) VecCharP;
+typedef Vec(void *) VecVoidPtr;
+typedef Vec(char *) VecCharPtr;
 typedef Vec(int)    VecInt;
 typedef Vec(char)   VecChar;
 typedef Vec(float)  VecFloat;
